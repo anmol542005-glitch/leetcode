@@ -8,7 +8,7 @@ public:
         int n=prices.size();
         int maxprofit=0;
         int bestprice=prices[0];
-        for(int i=0;i<n;i++){
+        for(int i=1;i<n;i++){
             if(bestprice<prices[i]){
                 maxprofit=max(maxprofit,prices[i]-bestprice);
             }
